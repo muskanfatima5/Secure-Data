@@ -1,13 +1,16 @@
-[tool.poetry]
+[project]
 name = "secure-data"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "A secure data encryption Streamlit app"
+authors = [
+    { name="Your Name", email="you@example.com" }
+]
+dependencies = [
+    "streamlit>=1.45.0",
+    "cryptography>=42.0.0"
+]
+requires-python = ">=3.12"
 
-[tool.poetry.dependencies]
-python = ">=3.12"
-
-# ... other dependencies ...
-
-[tool.poetry.packages]
-packages = [{ include = "secure_data" }]
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
