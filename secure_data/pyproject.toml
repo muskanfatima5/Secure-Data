@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "secure-data"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+
+# ... other dependencies ...
+
+[tool.poetry.packages]
+packages = [{ include = "secure_data" }]
